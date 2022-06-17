@@ -133,7 +133,7 @@ def optimizer(self,X,labels,lr):
     self.W = self.W - lr*grad
 ```
 
-### **Batch梯度下降法优化器**
+### **训练函数**
 设计训练函数，输入训练epoch，数据加载器dataloader，学习率lr和正则项系数lam，能够自动完成数据加载，前向传播损失计算，更新权重，并打印每个迭代（batch）的损失函数。
 ```python
 def train(self,epoch,dataloader,learn_rate=0.01,lam=0.01):
